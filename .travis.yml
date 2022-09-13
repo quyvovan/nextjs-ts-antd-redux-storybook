@@ -1,0 +1,11 @@
+language: node_js
+
+node_js:
+  - 16.7.0
+
+install:
+  - npm install -g pnpm@6
+  - pnpm i
+script:
+  - pnpm run test
+  - pnpm run build

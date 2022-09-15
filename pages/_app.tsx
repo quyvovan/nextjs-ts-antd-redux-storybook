@@ -31,6 +31,8 @@ import 'react-perfect-scrollbar/dist/css/styles.css'
 
 // ** Global css styles
 import '../styles/globals.css'
+// ** Language
+import 'src/i18n'
 
 // ** Extend App Props with Emotion
 type ExtendedAppProps = AppProps & {

@@ -60,7 +60,6 @@
     }
   },
   "dependencies": {
-    "@ant-design/icons": "^4.3.0",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@mui/material": "^5.10.5",
@@ -72,13 +71,15 @@
     "nprogress": "^0.2.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-hook-form": "^7.35.0",
     "react-i18next": "^11.8.4",
     "react-perfect-scrollbar": "^1.5.8",
     "react-popper": "^2.3.0",
     "react-redux": "^7.2.2",
     "redux-saga": "1.2.1",
     "styled-components": "^5.2.1",
-    "styled-normalize": "^8.0.7"
+    "styled-normalize": "^8.0.7",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",

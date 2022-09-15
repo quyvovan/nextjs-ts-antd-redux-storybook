@@ -9,8 +9,6 @@ import type { AppProps } from 'next/app'
 // ** Loader Import
 import NProgress from 'nprogress'
 
-import 'src/i18n'
-
 // ** Emotion Imports
 import { CacheProvider } from '@emotion/react'
 import type { EmotionCache } from '@emotion/cache'
@@ -33,6 +31,8 @@ import 'react-perfect-scrollbar/dist/css/styles.css'
 
 // ** Global css styles
 import '../styles/globals.css'
+// ** Language
+import 'src/i18n'
 
 // ** Extend App Props with Emotion
 type ExtendedAppProps = AppProps & {

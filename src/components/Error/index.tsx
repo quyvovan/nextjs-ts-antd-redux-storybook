@@ -42,7 +42,7 @@ const Error: FC<IProps> = ({ statusCode, message }) => {
         <h2>{statusCode}</h2>
         <h3>{t(`error.${statusCode}`)}</h3>
         <Message>{message}</Message>
-        <BackButton type="primary">
+        <BackButton>
           <Link href="/">{t('back_home')}</Link>
         </BackButton>
       </ErrorContainer>

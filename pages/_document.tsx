@@ -9,10 +9,10 @@ class MyDocument extends Document {
     try {
       const initialProps = await Document.getInitialProps(ctx)
 
-      ctx.renderPage = () =>
-        originalRenderPage({
-          enhanceApp: App => props => sheet.collectStyles(<App {...props} />),
-        })
+      // ctx.renderPage = () =>
+      //   originalRenderPage({
+      //     enhanceApp: App => props => sheet.collectStyles(<App {...props} />),
+      //   })
 
       return {
         ...initialProps,

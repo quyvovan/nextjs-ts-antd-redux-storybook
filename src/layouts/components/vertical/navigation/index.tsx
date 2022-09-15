@@ -68,16 +68,18 @@ const Navigation = (props: Props) => {
 
   // ** Hooks
   const theme = useTheme()
+  /* eslint-disable  @typescript-eslint/no-explicit-any */
+  // ** Fixes Navigation InfiniteScroll
 
   // ** Fixes Navigation InfiniteScroll
   const handleInfiniteScroll = (ref: HTMLElement) => {
     if (ref) {
       // @ts-ignore
-      // ref._getBoundingClientRect = ref.getBoundingClientRect
+      ref._getBoundingClientRect = ref.getBoundingClientRect
 
       ref.getBoundingClientRect = () => {
         // @ts-ignore
-        const original = ref.getBoundingClientRect()
+        const original = ref._getBoundingClientRect()
 
         return { ...original, height: Math.floor(original.height) }
       }

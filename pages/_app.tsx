@@ -9,6 +9,8 @@ import type { AppProps } from 'next/app'
 // ** Loader Import
 import NProgress from 'nprogress'
 
+import 'src/i18n'
+
 // ** Emotion Imports
 import { CacheProvider } from '@emotion/react'
 import type { EmotionCache } from '@emotion/cache'

@@ -1,8 +1,11 @@
 import axios from 'axios'
 
+const URL = process.env.HOST_NAME
+const TIME_OUT_API = parseInt(process.env.TIME_OUT_API ?? '0', 10)
+
 const instance = axios.create({
-  baseURL: 'https://jsonplaceholder.typicode.com',
-  timeout: 10000,
+  baseURL: URL,
+  timeout: TIME_OUT_API,
 })
 
 instance.interceptors.request.use(

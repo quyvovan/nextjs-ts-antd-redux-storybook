@@ -53,3 +53,4 @@ pnpm dev
 ## License
 
 Copyright (c) 2020-present JackySummer. See [LICENSE](./LICENSE) for details.
+npm run storybook

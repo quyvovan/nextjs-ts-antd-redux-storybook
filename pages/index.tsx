@@ -1,6 +1,6 @@
 import React from 'react'
 import { NextPage } from 'next'
-import { Button } from 'antd'
+import Button from '@mui/material/Button'
 import { useTranslation } from 'react-i18next'
 import styled from 'styled-components'
 import Link from 'src/components/Link'
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
   }
   return (
     <div>
-      <CoreTitle>Nextjs-TS-Antd-Redux-Storybook-Jest-Starter</CoreTitle>
+      <CoreTitle>Nextjs-TS-material-Redux-Storybook-Jest-Starter</CoreTitle>
       <LinkButton>
         <Link href="/user">{t('home.user')}</Link>
       </LinkButton>

@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
-import { Button } from 'antd'
+import Button from '@mui/material/Button'
 import { useTranslation } from 'react-i18next'
 import Link from 'src/components/Link'
 

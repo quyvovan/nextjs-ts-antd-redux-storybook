@@ -32,7 +32,7 @@ const VerticalNavItems = (props: Props) => {
   const RenderMenuItems = verticalNavItems?.map((item: NavLink | NavSectionTitle) => {
     const TagName: any = resolveNavItemComponent(item)
 
-    return <TagName {...props} item={item} key={item.title} />
+    return <TagName {...props} item={item} key="1" />
   })
 
   return RenderMenuItems

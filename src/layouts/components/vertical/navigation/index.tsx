@@ -141,15 +141,7 @@ const Navigation = (props: Props) => {
             {userVerticalNavMenuContent ? (
               userVerticalNavMenuContent(props)
             ) : (
-              <List className="nav-items" sx={{ transition: 'padding .25s ease', pr: 4.5 }}>
-                <VerticalNavItems
-                  groupActive={groupActive ?? null}
-                  setGroupActive={setGroupActive}
-                  currentActiveGroup={currentActiveGroup ?? null}
-                  setCurrentActiveGroup={setCurrentActiveGroup}
-                  {...props}
-                />
-              </List>
+              <List className="nav-items" sx={{ transition: 'padding .25s ease', pr: 4.5 }} />
             )}
           </Box>
         </ScrollWrapper>

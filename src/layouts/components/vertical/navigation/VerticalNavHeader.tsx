@@ -9,17 +9,18 @@ import Box, { BoxProps } from '@mui/material/Box'
 import { styled, useTheme } from '@mui/material/styles'
 import Typography, { TypographyProps } from '@mui/material/Typography'
 
-// // ** Type Import
-// import { Settings } from 'src/context/settingsContext'
+// // // ** Type Import
+import { Settings } from 'src/context/settingsContext'
 
 // ** Configs
 import themeConfig from 'src/configs/themeConfig'
 
 interface Props {
-  // hidden: boolean
-  // settings: Settings
-  // toggleNavVisibility: () => void
-  // saveSettings: (values: Settings) => void
+  /* eslint-disable */
+  hidden: boolean
+  settings: Settings
+  toggleNavVisibility: () => void
+  saveSettings: (values: Settings) => void
   verticalNavMenuBranding?: (props?: any) => ReactNode
 }
 
